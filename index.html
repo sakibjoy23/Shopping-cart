@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Shopping Cart</title>
+    <title>Shopping Cart - Promo code</title>
    
     
     
@@ -56,8 +56,15 @@
         <div class="total">
             <div class="total-title">Total</div>
             <div class="total-price">$0</div>
+            <div class="discount">
+                <input type="text" id="promo-code" placeholder="Promo Code">
+                <button id="apply-promo">Apply</button>
+                <span class="discount-amount">0</span>
+            </div>
+            <div class="final-total">Total after discount: <span class="final-total">$0.00</span></div>
         </div>
         <button class="btn-buy">Buy Now</button>
+        <div class="promo-message"></div>
         <i class="fa-solid fa-xmark" id="cart-close"></i>
     </div>
 

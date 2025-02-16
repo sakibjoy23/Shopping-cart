@@ -10,6 +10,7 @@
 
 body {
     color: #009B4D;
+    padding: 20px;
 }
 
 header {
@@ -67,6 +68,8 @@ header {
     margin-bottom: 15px;
 
 }
+
+
 
 .product-content {
     display: grid;
@@ -130,6 +133,9 @@ header {
     transition: 0.5s;
 }
 
+.cart-close:hover {
+    color: red;
+}
 .cart.active {
     right: 0;
 }
@@ -142,7 +148,9 @@ header {
 .cart-box {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 
 }
 
@@ -217,6 +225,10 @@ header {
     font-weight: 600;
 }
 
+.btn-buy:hover {
+    background-color: #0056b3;
+}
+
 .btn-buy {
     display: block;
     padding: 10px 30px;
@@ -228,6 +240,41 @@ header {
     margin: 20px auto 0;
     cursor: pointer;
 }
+
+.total {
+    margin-top: 20px;
+}
+
+.discount {
+    margin-top: 10px;
+}
+
+.final-total {
+    font-weight: bold;
+}
+
+.promo-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style for the Apply button */
+#apply-promo {
+    background-color: #25b945; 
+    color: white; 
+    border: none; 
+    padding: 8px 11px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for the Apply button */
+#apply-promo:hover {
+    background-color: #0056b3; 
+}
+
 
 #cart-close {
     position: absolute;
